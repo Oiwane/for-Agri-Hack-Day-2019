@@ -11,6 +11,7 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
+  //exit(0);
   value = analogRead(sensorPin);
   float voltage = (value/1024.0) * 5.0;
 
@@ -21,7 +22,7 @@ void loop() {
   //float weight = 0;
 
   if(voltage > threshold){
-    //weight = 0.0145 * voltage - 0.1908;
+    //weight = 65.184 * voltage + 19.266;
     //if(weigth < 0) weight = 0;
     digitalWrite(ledPin, HIGH);
   }else{
