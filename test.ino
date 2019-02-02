@@ -1,6 +1,6 @@
 const int ledPin = 4;
 const int sensorPin = A4;
-const int threshold = 3.0;
+const int threshold = 2.0;
 int value = 0;
 
 void setup() {
@@ -21,7 +21,7 @@ void loop() {
   //float weight = 0;
 
   if(voltage > threshold){
-    //weight = 0.0229 * voltage - 1.3372;
+    //weight = 0.0145 * voltage - 0.1908;
     //if(weigth < 0) weight = 0;
     digitalWrite(ledPin, HIGH);
   }else{
